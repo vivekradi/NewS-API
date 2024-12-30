@@ -30,7 +30,7 @@ async function getAPI(KeyWord) {
   try {
     document.querySelector(".loading").classList.replace("d-none", "d-flex");
     let response = await fetch(
-      `https://newsapi.org/v2/everything?q=${KeyWord}&from=2024-11-12&sortBy=publishedAt&apiKey=ec57b8bae7dc4a1b84dce8ec3747477c`
+      `https://newsapi.org/v2/everything?q=${KeyWord}&from=2024-11-30&sortBy=publishedAt&apiKey=ec57b8bae7dc4a1b84dce8ec3747477c`
     );
     let finallData = await response.json();
     arr = finallData.articles[1];
